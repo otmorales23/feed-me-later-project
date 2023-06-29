@@ -12,8 +12,6 @@ app.use(express.json());
 
 const yelp = require('yelp-fusion');
 
-// Place holder for Yelp Fusion's API Key. Grab them
-// from https://www.yelp.com/developers/v3/manage_app
 const apiKey = '6A-KJwwL3pZB0bVQwPsRk_WqPL0_infWGIhjzrMDnjxC3bpQHJaahidTx7PfIct9_U0a7LTrG5HmVD7UmI4QDbBJ8ulvVkHbnuEjtkgp526gqRVV8d8uhVF_80KaZHYx';
 
 const searchRequest = {
