@@ -26,3 +26,17 @@ CREATE TABLE days(
     dates INT,
     FOREIGN KEY (days_id) REFERENCES weeks(weeks_id)
 );
+
+CREATE TABLE business(
+    business_id VARCHAR,
+    business_name VARCHAR,
+    category VARCHAR,
+    location_address VARCHAR,
+    location_city VARCHAR,
+    location_state VARCHAR,
+    location_country VARCHAR,
+    hour_start INT,
+    hour_end INT,
+    rating INT,
+    business_url VARCHAR
+)
