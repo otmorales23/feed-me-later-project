@@ -28,3 +28,7 @@ client.search(searchRequest).then(response => {
 }).catch(e => {
   console.log(e);
 });
+
+app.listen(PORT,()=>{
+  console.log ("server is running")
+})
