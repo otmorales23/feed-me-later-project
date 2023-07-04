@@ -42,7 +42,14 @@ app.use("/login", loginRoutes);
 
 
 // Require handlebars
+client.search(searchRequest).then(response => {
+  const firstResult = response.jsonBody.businesses[0];
+  const prettyJson = JSON.stringify(firstResult, null, 4);
+  console.log(prettyJson);
+}).catch(e => {
+  console.log(e);
+});
 
-app.listen(PORT, () => {
+app.listen(PORT,()=>{
   console.log(`the server is running on https://localhost:${PORT}`)
 });
