@@ -4,12 +4,12 @@ const router = express.Router();
 const { v4: uuidv4 } = require ('uuid');
 const fs = require ("fs");
 
-const bcrypt = require("bcrypt");
+//const bcrypt = require("bcrypt");
 const saltRounds = 10; 
 
 const app = express();
 
-app.use(cookieParser());
+//app.use(cookieParser());
 
 app.use(session({
     secret: 'your_secret_key',
