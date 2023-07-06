@@ -53,3 +53,9 @@ client.search(searchRequest).then(response => {
 app.listen(PORT,()=>{
   console.log(`the server is running on https://localhost:${PORT}`)
 });
+
+const exphbs = require('express-handlebars');
+const routes = require('./controllers');
+
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
